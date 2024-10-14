@@ -11,10 +11,10 @@ body {
 
 header {
     width: 100%;
-    background: linear-gradient(135deg, #005555, #46a0a0, #005555); /* Atualizado */
+    background: linear-gradient(135deg, #fafafa, #e9eeee, #eceeee); /* Atualizado */
     padding: 20px 0;
     text-align: center;
-    border-bottom: 4px solid #00FFFF;
+    border-bottom: 4px solid #0069FF;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 0 0 20px 20px;
 }
@@ -39,18 +39,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 15px;
     border: 2px solid black;
     border-radius: 20px;
-    background: linear-gradient(135deg, #00FFFF, #005555);
+    background: linear-gradient(135deg, #020202, #1e1f1f);
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav ul li a:hover {
-    background: linear-gradient(135deg, #50d3d3, #00FFFF);
+    background: linear-gradient(135deg, #000000, #000000);
     color: black;
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
@@ -62,14 +62,14 @@ nav ul li a:hover {
     padding: 30px;
     border-radius: 20px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85));
-    box-shadow: 0 10px 30px rgb(0, 247, 255), 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgb(15, 42, 197), 0 0 20px rgba(255, 255, 255, 0.1);
     margin: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgb(0, 247, 255), 0 0 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 40px  rgb(15, 42, 197), 0 0 30px rgba(255, 255, 255, 0.2);
 }
 
 .topic {
@@ -81,12 +81,12 @@ nav ul li a:hover {
 }
 
 .topic:hover {
-    background-color: rgba(0, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     transform: scale(1.02);
 }
 
 h2 {
-    color: #00FFFF;
+    color: #0069FF;
 }
 
 p, ul {
@@ -96,11 +96,11 @@ p, ul {
 
 footer {
     width: 100%;
-    background: linear-gradient(135deg, #005555, #46a0a0, #005555); /* Atualizado */
-    color: white;
+    background: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px 0;
-    border-top: 4px solid #00FFFF;
+    border-top: 4px solid #0069FF;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px 20px 0 0;
 }
