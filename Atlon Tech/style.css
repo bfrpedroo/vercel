@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #005555, #46a0a0, #005555); /* Atualizado */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #00FFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #00FFFF, #005555);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #50d3d3, #00FFFF);
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    text-align: justify;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85));
+    box-shadow: 0 10px 30px rgb(0, 247, 255), 0 0 20px rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgb(0, 247, 255), 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.topic {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.topic:hover {
+    background-color: rgba(0, 255, 255, 0.3);
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #00FFFF;
+}
+
+p, ul {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(135deg, #005555, #46a0a0, #005555); /* Atualizado */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 4px solid #00FFFF;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px 20px 0 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.social-buttons {
+    margin-top: 15px;
+}
+
+.social-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-button {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.instagram-button {
+    background: linear-gradient(135deg, #D62976, #aa5672);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.instagram-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
