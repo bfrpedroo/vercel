@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(18, 18, 19) 35%, rgb(0, 0, 0) 100%);
+    margin: 0;
+    padding: 20px;
+    color: #fff; /* Texto branco */
+}
+
+.header {
+    text-align: center;
+    background-color: #000000; /* Dourado */
+    color: rgb(179, 163, 78);
+    padding: 40px 20px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    animation: fadeIn 1s ease-in-out; /* Animação de entrada */
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.header-image {
+    width: 100px; /* Tamanho da imagem */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    animation: slideIn 1s ease forwards; /* Animação para a imagem */
+    border-radius: 400px;
+
+}
+
+.header-text {
+    text-align: center; /* Alinha o texto à esquerda */
+    align-items: center;
+    justify-items: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #d4af37;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    opacity: 0; /* Inicialmente invisível */
+    animation: fadeInUp 1s ease forwards 0.5s; /* Animação para o parágrafo */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: black; /* Fundo preto */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.5); /* Sombra dourada */
+}
+
+.about, .services, .contact {
+    margin-bottom: 40px;
+    width: 100%; /* Para usar o flex corretamente */
+    text-align: center;
+}
+
+.service-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #d4af37; /* Borda dourada */
+    border-radius: 5px;
+    background: rgba(212, 175, 55, 0.1); /* Fundo dourado claro */
+}
+
+.input-field {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #d4af37; /* Borda dourada */
+    border-radius: 5px;
+    background: transparent; /* Fundo transparente */
+    color: white; /* Texto branco */
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.input-field:focus {
+    border-color: #b89c30; /* Dourado escuro ao focar */
+    transform: scale(1.02); /* Aumenta levemente ao focar */
+    outline: none; /* Remove contorno padrão */
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #d4af37; /* Dourado */
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #b89c30; /* Dourado escuro */
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #d4af37; /* Dourado */
+}
+.section {
+    opacity: 1; /* Totalmente visível */
+    transform: translateY(0); /* Na posição original */
+    transition: border 0.5s ease; /* Transição suave para a borda */
+    border: 2px solid transparent; /* Borda transparente inicialmente */
+}
+
+.section:hover {
+    border: 2px solid #d4af37; /* Borda dourada ao passar o mouse */
+    animation: borderPulse 0.5s ease-in-out; /* Animação das bordas */
+}
+
+@keyframes borderPulse {
+    0% {
+        border-color: #d4af37;
+    }
+    50% {
+        border-color: #fff; /* Altera a cor da borda para branco no meio da animação */
+    }
+    100% {
+        border-color: #d4af37; /* Retorna à cor original */
+    }
+}
+h1 {
+    color: #d4af37;
+}
+h2 {
+    color: #d4af37;
+}
+h3 {
+    color: #d4af37;
+}
+h4 {
+    color: red;
+    font-size: larger;
+}
+

@@ -1,0 +1,136 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #62a756; /* Verde personalizado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffeb3b; /* Amarelo forte */
+    color: #333; /* Cor do texto */
+    text-align: center;
+    padding: 5px 10px; /* Altura reduzida */
+    width: 100%;
+    border-bottom: 4px solid #fbc02d; /* Borda inferior */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra do cabeçalho */
+    border-radius: 0 0 20px 20px; /* Bordas arredondadas na parte inferior */
+}
+
+.emoji {
+    text-align: center; /* Centraliza o emoji */
+    margin-bottom: 5px; /* Espaço entre o emoji e o h1 */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2em; /* Tamanho do título */
+    letter-spacing: 1px;
+    color: #333; /* Cor do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra para efeito de profundidade */
+}
+
+nav {
+    margin-top: 5px;
+}
+
+.nav-buttons {
+    display: flex; /* Exibe os botões em linha */
+    justify-content: center; /* Centraliza os botões */
+}
+
+.nav-button {
+    background-color: #62a756; /* Cor verde para o botão */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: 2px solid #fbc02d; /* Borda com a cor do header */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 0 5px; /* Espaçamento entre os botões */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.nav-button:hover {
+    background-color: #4b8f3b; /* Muda a cor ao passar o mouse */
+    color: #fff; /* Muda a cor do texto ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: linear-gradient(to right, #ffffff, #f8f8f8, #eeeeee, #e0e0e0); /* Gradiente linear com 4 tons de branco */
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(255, 235, 59, 0.5);
+    padding: 30px;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(255, 235, 59, 0.7);
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.about, .services, .contact {
+    background-color: #ffeb3b; /* Fundo amarelo */
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: justify;
+    transition: transform 0.3s;
+}
+
+.about:hover, .services:hover, .contact:hover {
+    transform: scale(1.02);
+}
+
+.contact a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.whatsapp {
+    background-color: #25D366; /* Fundo verde para WhatsApp */
+}
+
+.instagram {
+    background-color: #E1306C; /* Fundo rosa para Instagram */
+}
+
+.contact a:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+footer {
+    background-color: #ffeb3b; /* Amarelo forte */
+    color: #333;
+    text-align: center;
+    padding: 15px 10px;
+    width: 100%;
+    position: relative;
+    border-top: 4px solid #fbc02d; /* Borda superior */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Sombra do rodapé */
+    border-radius: 20px 20px 0 0; /* Bordas arredondadas na parte superior */
+}
